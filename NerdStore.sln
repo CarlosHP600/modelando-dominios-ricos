@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30914.41
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{A5AFDF04-B63C-4FF2-9522-3BCF363D494E}"
 EndProject
@@ -19,7 +19,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pagamentos", "Pagamentos", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vendas", "Vendas", "{FE59866F-A292-440F-9EB1-4773D11FF785}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Catalogo.Domain", "src\NerdStore.Catalogo.Domain\NerdStore.Catalogo.Domain.csproj", "{9EC7A785-C4AA-4ADE-96D5-AE2AB7E01B21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Core", "src\NerdStore.Core\NerdStore.Core.csproj", "{A5979664-3E8C-43D2-AD9F-7E26A3C7D036}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EC7A785-C4AA-4ADE-96D5-AE2AB7E01B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EC7A785-C4AA-4ADE-96D5-AE2AB7E01B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EC7A785-C4AA-4ADE-96D5-AE2AB7E01B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EC7A785-C4AA-4ADE-96D5-AE2AB7E01B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5979664-3E8C-43D2-AD9F-7E26A3C7D036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5979664-3E8C-43D2-AD9F-7E26A3C7D036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5979664-3E8C-43D2-AD9F-7E26A3C7D036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5979664-3E8C-43D2-AD9F-7E26A3C7D036}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -30,5 +48,10 @@ Global
 		{B41AD32D-A0B1-429D-B88E-0A62824E04F5} = {A5AFDF04-B63C-4FF2-9522-3BCF363D494E}
 		{EA861514-4564-436C-98B3-AD5F20894B2C} = {A5AFDF04-B63C-4FF2-9522-3BCF363D494E}
 		{FE59866F-A292-440F-9EB1-4773D11FF785} = {A5AFDF04-B63C-4FF2-9522-3BCF363D494E}
+		{9EC7A785-C4AA-4ADE-96D5-AE2AB7E01B21} = {2980136C-B7AF-4581-9C9C-CB4A2C6743B5}
+		{A5979664-3E8C-43D2-AD9F-7E26A3C7D036} = {EAA201F1-B8B1-476B-9952-1C9A051F657B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59CB13C4-35E0-402A-A5F4-6E1DA5CAAB79}
 	EndGlobalSection
 EndGlobal
