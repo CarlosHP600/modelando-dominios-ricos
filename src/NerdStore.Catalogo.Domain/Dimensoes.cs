@@ -19,9 +19,9 @@ namespace NerdStore.Catalogo.Domain
 
         private void Validar()
         {
-            Validacoes.ValidarSeMenorIgualMinimo(Altura, 1, "O campo Altura deve ser no minimo maior ou igual a 1!");
-            Validacoes.ValidarSeMenorIgualMinimo(Largura, 1, "O campo Largura deve ser no minimo maior ou igual a 1!");
-            Validacoes.ValidarSeMenorIgualMinimo(Profundidade, 1, "O campo Profundidade deve ser no minimo maior ou igual a 1!");
+            Validacoes.ValidarSeMenorQue(Altura, 1, "O campo Altura deve ser no minimo maior ou igual a 1!");
+            Validacoes.ValidarSeMenorQue(Largura, 1, "O campo Largura deve ser no minimo maior ou igual a 1!");
+            Validacoes.ValidarSeMenorQue(Profundidade, 1, "O campo Profundidade deve ser no minimo maior ou igual a 1!");
         }
 
         public string DescricaoFormatada()
