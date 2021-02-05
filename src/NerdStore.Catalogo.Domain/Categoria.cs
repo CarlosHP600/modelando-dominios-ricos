@@ -11,6 +11,14 @@ namespace NerdStore.Catalogo.Domain
         {
             Codigo = codigo;
             Nome = nome;
+
+            Validar();
+        }
+
+        private void Validar()
+        {
+            Validacoes.ValidarSeVazio(Nome, "O Nome da Categoria não pode ser vazio!");
+            Validacoes.ValidarSeIgual(Codigo, 0, "O campo Codigo não pode ser igual a zero!");
         }
 
         public override string ToString()
