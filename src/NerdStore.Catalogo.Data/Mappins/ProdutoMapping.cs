@@ -22,20 +22,23 @@ namespace NerdStore.Catalogo.Data.Mappins
                 .IsRequired()
                 .HasColumnType("varchar(250)");
 
+            builder.Property(c => c.Valor)
+                .HasPrecision(18, 4);
+
             builder.OwnsOne(c => c.Dimensoes, cm =>
-            {
-                cm.Property(c => c.Altura)
-                    .HasColumnName("Altura")
-                    .HasColumnType("int");
+             {
+                 cm.Property(c => c.Altura)
+                     .HasColumnName("Altura")
+                     .HasColumnType("int");
 
-                cm.Property(c => c.Largura)
-                    .HasColumnName("Largura")
-                    .HasColumnType("int");
+                 cm.Property(c => c.Largura)
+                     .HasColumnName("Largura")
+                     .HasColumnType("int");
 
-                cm.Property(c => c.Profundidade)
-                    .HasColumnName("Profundidade")
-                    .HasColumnType("int");
-            });
+                 cm.Property(c => c.Profundidade)
+                     .HasColumnName("Profundidade")
+                     .HasColumnType("int");
+             });
 
             builder.ToTable("Produtos");
         }

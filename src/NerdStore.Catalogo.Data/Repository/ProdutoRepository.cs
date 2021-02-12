@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NerdStore.Catalogo.Data.Repository
 {
-    internal class ProdutoRepository : IProdutoRepository
+    public class ProdutoRepository : IProdutoRepository
     {
         private readonly CatalogoContext _context;
 
