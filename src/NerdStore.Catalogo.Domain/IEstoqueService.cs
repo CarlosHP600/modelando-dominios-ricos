@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace NerdStore.Catalogo.Domain
 {
-    internal interface IEstoqueService : IDisposable
+    public interface IEstoqueService : IDisposable
     {
         Task<bool> DebitarEstoque(Guid produtoId, int quantidade);
 
