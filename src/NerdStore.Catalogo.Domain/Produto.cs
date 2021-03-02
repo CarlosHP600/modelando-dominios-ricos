@@ -45,6 +45,7 @@ namespace NerdStore.Catalogo.Domain
 
         public void AlterarDescricao(string descricao)
         {
+            Validacoes.ValidarSeVazio(Descricao, "O campo Descrição do produto não pode estar vazio!");
             Descricao = descricao;
         }
 
@@ -63,7 +64,10 @@ namespace NerdStore.Catalogo.Domain
 
         public bool PossuiEstoque(int quantidade)
         {
-            return QuantidadeEstoque >= quantidade;
+            if (quantidade < 0)
+                quantidade *= -1;
+
+            return quantidade <= QuantidadeEstoque;
         }
 
         public void Validar()

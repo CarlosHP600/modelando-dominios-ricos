@@ -61,7 +61,8 @@ namespace NerdStore.Catalogo.Application.Services
 
         public async Task<ProdutoViewModel> DebitarEstoque(Guid id, int quantidade)
         {
-            if (!_estoqueService.DebitarEstoque(id, quantidade).Result)
+            var debitouEstoque = await _estoqueService.DebitarEstoque(id, quantidade);
+            if (!debitouEstoque)
             {
                 throw new DomainException("Falha ao debitar estoque");
             }
